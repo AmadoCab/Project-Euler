@@ -10,7 +10,7 @@ def reducción_piramidal(matriz):
             elif tabla[-1][i] < tabla[-1][i+1]:
                 tabla[-2][i] += tabla[-1][i+1]
             elif tabla[-1][i] == tabla[-1][i+1]:
-                print(True)
+                tabla[-2][i] += tabla[-1][i+1]
         tabla.remove(tabla[-1])
         reducción_piramidal(tabla)
 
