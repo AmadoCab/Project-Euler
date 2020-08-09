@@ -1,4 +1,6 @@
+# Esta función es la encargada de hacer las comparaciones en la matriz
 def reducción_piramidal(matriz):
+    """La función recibe como parametro una matriz triangular inferior"""
     tabla = matriz
     longitud = len(tabla[-1])
     if longitud == 1:
@@ -9,9 +11,12 @@ def reducción_piramidal(matriz):
                 tabla[-2][i] += tabla[-1][i]
             elif tabla[-1][i] < tabla[-1][i+1]:
                 tabla[-2][i] += tabla[-1][i+1]
+            elif tabla[-1][i] == tabla[-1][i+1]:
+                tabla[-2][i] += tabla[-1][i+1]
         tabla.remove(tabla[-1])
         reducción_piramidal(tabla)
 
+# Aquí la matriz a la que aplicaremos la función
 triangulo = [
     [75],
     [95, 64],
