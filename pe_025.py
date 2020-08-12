@@ -14,6 +14,6 @@ while len(str_fibonacci) < 1000:
         no_fibonacci = fibonacci(contador)
         str_fibonacci = str(no_fibonacci)
     except:
-        print(no_fibonacci)
+        print('Error')
         break
 print(contador)
