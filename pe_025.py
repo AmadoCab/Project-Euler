@@ -1,5 +1,7 @@
 from math import sqrt
 
+#No funciona
+
 def fibonacci(a):
     ans = int(1/sqrt(5)*((1+sqrt(5))/2)**a-1/sqrt(5)*((1-sqrt(5))/2)**a)
     return ans

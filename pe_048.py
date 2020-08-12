@@ -1,5 +1,7 @@
 suma_total = 0
 
+# No funciona
+
 for i in range(1000+1):
     suma_total += i**i
 
